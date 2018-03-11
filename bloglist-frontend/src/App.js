@@ -5,17 +5,8 @@ import Notification from './components/Notification'
 import Togglable from './components/Togglable'
 import blogService from './services/blogs'
 import loginService from './services/login'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { FormGroup, FormControl, ControlLabel, Button, Nav, NavItem, Navbar } from 'react-bootstrap'
-
-const menuStyle = {
-  display: 'inline-block',
-  color: 'black',
-  border: 'solid red ',
-  fontSize: 16,
-  padding: 5,
-  margin: 5
-}
 
 const Menu = ( { state, logout }) => (
 <Navbar inverse collapseOnSelect>
@@ -26,8 +17,8 @@ const Menu = ( { state, logout }) => (
   </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
-        <NavItem href="#">
-          <Link to='/'>blogs</Link>&nbsp;
+        <NavItem href="/">
+          blogs
         </NavItem>
         <NavItem>
           {state.user.name} logged in <button onClick={logout}>logout</button>
