@@ -1,0 +1,13 @@
+.error {
+    color: red;
+    border-style: solid;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    color: green;
+    border-style: solid;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
